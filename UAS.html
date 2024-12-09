@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Social Network Analysis (SNA) &#8212; My sample book</title>
+    <title>UAS &#8212; My sample book</title>
   
   
   
@@ -69,9 +69,7 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Analisa-Graph';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'UAS';</script>
     <script src="_static/searchtools.js?v=63a53a7d"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
@@ -89,8 +87,7 @@
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Aljabar Boolean dan gerbang logika" href="ALJABAR%20BOOLEAN%20DAN%20GERBANG%20LOGIKA.html" />
-    <link rel="prev" title="Deret dan Reduksi" href="Deretan-dan-Reduksi.html" />
+    <link rel="prev" title="Probabilitas Diskret" href="PROBABILITAS%20DISKRET.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -200,11 +197,11 @@
 <li class="toctree-l1"><a class="reference internal" href="Matematika%20diskret.html">1. HUKUM DE MORGAN’S</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="Deretan-dan-Reduksi.html">Deret dan Reduksi</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Social Network Analysis (SNA)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Analisa-Graph.html">Social Network Analysis (SNA)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ALJABAR%20BOOLEAN%20DAN%20GERBANG%20LOGIKA.html">Aljabar Boolean dan gerbang logika</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="PROBABILITAS%20DISKRET.html">Probabilitas Diskret</a></li>
-<li class="toctree-l1"><a class="reference internal" href="UAS.html">UAS</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">UAS</a></li>
 
 
 </ul>
@@ -278,7 +275,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FAnalisa-Graph.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FUAS.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -308,7 +305,7 @@
       
       
       
-      <li><a href="_sources/Analisa-Graph.md" target="_blank"
+      <li><a href="_sources/UAS.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -384,7 +381,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Social Network Analysis (SNA)</h1>
+    <h1>UAS</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -394,11 +391,23 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#degree-centrality">Degree Centrality</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#betweenness-centrality">Betweenness Centrality</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#closeness-centrality">Closeness Centrality</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eigen-vector-centrality">Eigen Vector Centrality</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">UAS</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#no-1">NO 1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#no-2">NO 2</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#degree-centrality">Degree centrality</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-closeness-centrality-dari-g">-Hitung Closeness Centrality dari G</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-between-centrality-dari-f">-Hitung Between Centrality dari F</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tabel-graph">TABEL GRAPH:</a></li>
 </ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#closeness">Closeness</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#between">Between:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -409,48 +418,128 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="social-network-analysis-sna">
-<h1>Social Network Analysis (SNA)<a class="headerlink" href="#social-network-analysis-sna" title="Link to this heading">#</a></h1>
-<p>Sistem analisis data yang berfungsi membuat data lebih terstruktur agar mudah dalam melakukan pengukuran. SNA merupakan analisis yang memiliki fungsi dalam menggambarkan bagaimana struktur sosial dan hubungan antar struktur sosial.</p>
-<p>SNA menggambarkan struktur yang saling berhubungan, merepresentasikan individu atau sistem dalam suatu jaringan (nodes), maupun yang menggambarkan hubungan atau interaksi antar individu tersebut (edges).</p>
-<p>Berikut adalah penjelasan tentang berbagai metrik sentralitas yang digunakan dalam analisis jaringan:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="uas">
+<h1>UAS<a class="headerlink" href="#uas" title="Link to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="no-1">
+<h1>NO 1<a class="headerlink" href="#no-1" title="Link to this heading">#</a></h1>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>No</p></th>
+<th class="head"><p>P</p></th>
+<th class="head"><p>Q</p></th>
+<th class="head"><p>R</p></th>
+<th class="head"><p>S</p></th>
+<th class="head"><p>(P-&gt;Q)-&gt;(R-&gt;S)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>F</p></td>
+<td><p>F</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>F</p></td>
+<td><p>F</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>T</p></td>
+<td><p>F</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>T</p></td>
+<td><p>F</p></td>
+<td><p>F</p></td>
+<td><p>F</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>F</p></td>
+<td><p>F</p></td>
+<td><p>F</p></td>
+<td><p>F</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>F</p></td>
+<td><p>F</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>F</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>F</p></td>
+<td><p>F</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="no-2">
+<h1>NO 2<a class="headerlink" href="#no-2" title="Link to this heading">#</a></h1>
 <section id="degree-centrality">
-<h2>Degree Centrality<a class="headerlink" href="#degree-centrality" title="Link to this heading">#</a></h2>
-<p>Degree centrality mengukur jumlah koneksi langsung (edges) yang dimiliki suatu node. Node dengan degree centrality tinggi dianggap sebagai pusat dari jaringan karena memiliki banyak hubungan langsung dengan node lainnya. Misalnya, dalam jaringan sosial, seseorang dengan banyak koneksi akan memiliki nilai degree centrality yang tinggi.
-Rumusnya adalah:</p>
-<div class="math notranslate nohighlight">
-\[
-C_D(v) = \frac{\text{deg}(v)}{n - 1}
-\]</div>
-<p>Di mana:</p>
-<p>deg(v) : jumlah koneksi langsung dari node v
-n : total jumlah node dalam jaringan.</p>
+<h2>Degree centrality<a class="headerlink" href="#degree-centrality" title="Link to this heading">#</a></h2>
+<p><img alt="Screenshot_7" src="https://hackmd.io/_uploads/r1CHgQNEJg.png" /></p>
+<section id="hitung-closeness-centrality-dari-g">
+<h3>-Hitung Closeness Centrality dari G<a class="headerlink" href="#hitung-closeness-centrality-dari-g" title="Link to this heading">#</a></h3>
 </section>
-<section id="betweenness-centrality">
-<h2>Betweenness Centrality<a class="headerlink" href="#betweenness-centrality" title="Link to this heading">#</a></h2>
-<p>Betweenness centrality mengevaluasi sejauh mana sebuah node berada di antara node-node lainnya dalam jaringan. Ini didasarkan pada jumlah jalur terpendek di mana node tersebut menjadi perantara. Node dengan nilai betweenness tinggi dianggap penting karena berfungsi sebagai penghubung antar bagian jaringan, memungkinkan informasi atau sumber daya mengalir lebih efisien.
-Rumusnya adalah:
-$<span class="math notranslate nohighlight">\(
-C_B(v) = \sum_{s \neq v \neq t} \frac{\sigma_{st}(v)}{\sigma_{st}}
-\)</span>$
-Penjelasan untuk simbol-simbolnya:</p>
-<p>𝜎𝑠𝑡 σ st : Jumlah jalur terpendek antara node s dan t.
-𝜎𝑠𝑡(𝑣)σ st(v): Jumlah jalur terpendek antara s dan t yang melewati node v.</p>
+<section id="hitung-between-centrality-dari-f">
+<h3>-Hitung Between Centrality dari F<a class="headerlink" href="#hitung-between-centrality-dari-f" title="Link to this heading">#</a></h3>
+<section id="tabel-graph">
+<h4>TABEL GRAPH:<a class="headerlink" href="#tabel-graph" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>TABEL GRAPH</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>A B</p></td>
+</tr>
+<tr class="row-odd"><td><p>B C</p></td>
+</tr>
+<tr class="row-even"><td><p>B E</p></td>
+</tr>
+<tr class="row-odd"><td><p>B D</p></td>
+</tr>
+<tr class="row-even"><td><p>C E</p></td>
+</tr>
+<tr class="row-odd"><td><p>G D</p></td>
+</tr>
+<tr class="row-even"><td><p>D E</p></td>
+</tr>
+<tr class="row-odd"><td><p>E F</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
-<section id="closeness-centrality">
-<h2>Closeness Centrality<a class="headerlink" href="#closeness-centrality" title="Link to this heading">#</a></h2>
-<p>Closeness centrality mengukur kedekatan sebuah node terhadap semua node lainnya dalam jaringan. Ini dihitung berdasarkan jarak rata-rata dari satu node ke semua node lainnya. Node dengan nilai closeness tinggi memiliki akses lebih cepat ke seluruh jaringan karena berada di posisi strategis
-Rumus :
-![image]</p>
 </section>
-<section id="eigen-vector-centrality">
-<h2>Eigen Vector Centrality<a class="headerlink" href="#eigen-vector-centrality" title="Link to this heading">#</a></h2>
-<p>Sentralitas vektor eigen adalah algoritma yang mengukur pengaruh suatu simpul dalam jaringan yang terhubung. Sentralitas vektor eigen juga disebut sebagai sentralitas eigen atau skor prestise
-Rumus :
-<img alt="image" src="https://hackmd.io/_uploads/HJcAYL_z1g.png" />
-referensi by:
-<a class="reference external" href="https://www.sbm.itb.ac.id/id/2023/07/20/menganalisa-data-besar-dengan-social-network-analysis-sna/">https://www.sbm.itb.ac.id/id/2023/07/20/menganalisa-data-besar-dengan-social-network-analysis-sna/</a>
-<a class="reference external" href="https://ejurnal.stmik-budidarma.ac.id/index.php/jurikom/article/download/4053/2709">https://ejurnal.stmik-budidarma.ac.id/index.php/jurikom/article/download/4053/2709</a></p>
+<section id="closeness">
+<h3>Closeness<a class="headerlink" href="#closeness" title="Link to this heading">#</a></h3>
+</section>
+<section id="between">
+<h3>Between:<a class="headerlink" href="#between" title="Link to this heading">#</a></h3>
+<p>|BETWEEN|</p>
+</section>
 </section>
 </section>
 
@@ -485,22 +574,13 @@ referensi by:
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Deretan-dan-Reduksi.html"
+       href="PROBABILITAS%20DISKRET.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Deret dan Reduksi</p>
+        <p class="prev-next-title">Probabilitas Diskret</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="ALJABAR%20BOOLEAN%20DAN%20GERBANG%20LOGIKA.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Aljabar Boolean dan gerbang logika</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -519,11 +599,23 @@ referensi by:
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#degree-centrality">Degree Centrality</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#betweenness-centrality">Betweenness Centrality</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#closeness-centrality">Closeness Centrality</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eigen-vector-centrality">Eigen Vector Centrality</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">UAS</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#no-1">NO 1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#no-2">NO 2</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#degree-centrality">Degree centrality</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-closeness-centrality-dari-g">-Hitung Closeness Centrality dari G</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-between-centrality-dari-f">-Hitung Between Centrality dari F</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tabel-graph">TABEL GRAPH:</a></li>
 </ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#closeness">Closeness</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#between">Between:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
